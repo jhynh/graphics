@@ -1,0 +1,5 @@
+i could conduct frame delay by working out the time thats passed between each frame and multiply that by the players pixels per second, using delta time
+multiply a deltaTime calculated with the rate at which the player is moving
+
+It is done by calling a timer every frame per second that holds the time between now and last call in milliseconds.
+Thereafter the resulting number (delta time) is used to calculate how far, for instance, a video game character would have travelled during that time.

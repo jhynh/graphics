@@ -1,0 +1,3 @@
+/home/jan/Documents/opengl/salsaDip/build/CMakeFiles/rebuild_cache.dir
+/home/jan/Documents/opengl/salsaDip/build/CMakeFiles/edit_cache.dir
+/home/jan/Documents/opengl/salsaDip/build/CMakeFiles/opengl_d1.dir

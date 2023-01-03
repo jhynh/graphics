@@ -1,0 +1,152 @@
+[
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/sdl/project_01/include -I/home/jan/Documents/sdl/project_01/include/ECS -I/home/jan/Documents/sdl/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/main.cpp.o -c /home/jan/Documents/sdl/project_01/main.cpp",
+  "file": "/home/jan/Documents/sdl/project_01/main.cpp"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/sdl/project_01/include -I/home/jan/Documents/sdl/project_01/include/ECS -I/home/jan/Documents/sdl/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/Game.cpp.o -c /home/jan/Documents/sdl/project_01/src/Game.cpp",
+  "file": "/home/jan/Documents/sdl/project_01/src/Game.cpp"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/sdl/project_01/include -I/home/jan/Documents/sdl/project_01/include/ECS -I/home/jan/Documents/sdl/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/Map.cpp.o -c /home/jan/Documents/sdl/project_01/src/Map.cpp",
+  "file": "/home/jan/Documents/sdl/project_01/src/Map.cpp"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/sdl/project_01/include -I/home/jan/Documents/sdl/project_01/include/ECS -I/home/jan/Documents/sdl/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/Texture_manager.cpp.o -c /home/jan/Documents/sdl/project_01/src/Texture_manager.cpp",
+  "file": "/home/jan/Documents/sdl/project_01/src/Texture_manager.cpp"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/sdl/project_01/include -I/home/jan/Documents/sdl/project_01/include/ECS -I/home/jan/Documents/sdl/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/Vector2D.cpp.o -c /home/jan/Documents/sdl/project_01/src/Vector2D.cpp",
+  "file": "/home/jan/Documents/sdl/project_01/src/Vector2D.cpp"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/sdl/project_01/include -I/home/jan/Documents/sdl/project_01/include/ECS -I/home/jan/Documents/sdl/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/gameObject.cpp.o -c /home/jan/Documents/sdl/project_01/src/gameObject.cpp",
+  "file": "/home/jan/Documents/sdl/project_01/src/gameObject.cpp"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/sdl/project_01/include -I/home/jan/Documents/sdl/project_01/include/ECS -I/home/jan/Documents/sdl/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/interface.cpp.o -c /home/jan/Documents/sdl/project_01/src/interface.cpp",
+  "file": "/home/jan/Documents/sdl/project_01/src/interface.cpp"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc  -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIE -o CMakeFiles/showimage.dir/showimage.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/showimage.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/showimage.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc  -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIE -o CMakeFiles/showanim.dir/showanim.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/showanim.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/showanim.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_WIC.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_WIC.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_WIC.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_avif.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_avif.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_avif.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_bmp.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_bmp.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_bmp.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_gif.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_gif.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_gif.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_jpg.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_jpg.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_jpg.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_jxl.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_jxl.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_jxl.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_lbm.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_lbm.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_lbm.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_pcx.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_pcx.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_pcx.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_png.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_png.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_png.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_pnm.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_pnm.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_pnm.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_qoi.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_qoi.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_qoi.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_stb.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_stb.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_stb.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_svg.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_svg.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_svg.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_tga.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_tga.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_tga.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_tif.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_tif.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_tif.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_webp.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_webp.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_webp.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_xcf.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xcf.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xcf.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_xpm.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xpm.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xpm.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_xv.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xv.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xv.c"
+},
+{
+  "directory": "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2",
+  "command": "/usr/bin/gcc -DBUILD_SDL -DDLL_EXPORT -DLOAD_BMP -DLOAD_GIF -DLOAD_JPG -DLOAD_LBM -DLOAD_PCX -DLOAD_PNG -DLOAD_PNM -DLOAD_QOI -DLOAD_SVG -DLOAD_TGA -DLOAD_XCF -DLOAD_XPM -DLOAD_XV -DSDL_BUILD_MAJOR_VERSION=2 -DSDL_BUILD_MICRO_VERSION=2 -DSDL_BUILD_MINOR_VERSION=6 -DSDL_IMAGE_SAVE_JPG=1 -DSDL_IMAGE_SAVE_PNG=1 -DUSE_STBIMAGE -I/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2 -isystem /usr/include/SDL2 -g -fPIC -fvisibility=hidden -o CMakeFiles/SDL2_image.dir/IMG_xxx.c.o -c /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xxx.c",
+  "file": "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/IMG_xxx.c"
+}
+]

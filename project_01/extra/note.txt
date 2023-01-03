@@ -1,0 +1,1 @@
+a copy of this file exists under SDL2_image-2.6.2/cmake/ for the sake of cMake
