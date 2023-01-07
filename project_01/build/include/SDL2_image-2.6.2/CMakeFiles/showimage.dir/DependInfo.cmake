@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/showimage.c" "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/showimage.dir/showimage.c.o"
+  "/home/jan/Documents/graphicsDev/project_01/include/SDL2_image-2.6.2/showimage.c" "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/showimage.dir/showimage.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,7 +16,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/SDL2_image.dir/DependInfo.cmake"
+  "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/SDL2_image.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

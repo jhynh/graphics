@@ -3,3 +3,18 @@ multiply a deltaTime calculated with the rate at which the player is moving
 
 It is done by calling a timer every frame per second that holds the time between now and last call in milliseconds.
 Thereafter the resulting number (delta time) is used to calculate how far, for instance, a video game character would have travelled during that time.
+
+
+ISSUES I DON'T UNDERSTAND???
+    std::fstream mapFile;
+    mapFile.open(path);
+
+    for(int y = 0; y < sizeY; ++y){
+        for(int x = 0; x < sizeX; ++x){
+            mapFile.get(tile);
+            //taking a pointer and a pointer passes a reference so we can just take reference...
+            Game::AddTile(atoi(&tile), x * 32, y * 32);
+            mapFile.ignore(2,',');
+        }
+        //mapFile.ignore(); odd that this doesn't JUST get rid of the \n at the end
+    }

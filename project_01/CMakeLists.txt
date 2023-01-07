@@ -4,7 +4,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_COMPILER "g++")
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/include/SDL2_image-2.6.2/cmake/")
 
-
 project(project_1 VERSION 0.9)
 find_package(SDL2 REQUIRED)
 find_package(SDL2_image REQUIRED)

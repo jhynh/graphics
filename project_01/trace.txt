@@ -1,0 +1,52 @@
+notes:
+- the true value of a headerfile allows us to understand the dependencies a source
+file relies on, in this case, it's clear that the collider component is very much a
+foundation of the Game.cpp file.
+- this would also imply that the game.h file is also dependent on the component files
+- BUT then it becomes understandable why we ignored the components idea at first,
+it requires the use of an entity component system
+
+//-----------------------------------------------------------------------
+//main
+//-----------------------------------------------------------------------
+creates a ptr of object game
+main takes inputs inputs for execution
+creates a const for fps and frame delay
+creates a large int frameStart for the purpose of running a long time
+frameTime will be the difference between frames
+create a game object
+call the init function from game, pass in the window sizes and ask if it's full SDL_CreateRenderer
+while loop that checks if the game is running
+get the time the frame starts since execution
+call game functions of eventhandling, updating, rendering
+calculate the frame delay using frameTime and frameStart
+if the delay is greater than the time, we implement our frame cap
+we call SDL delay
+
+if false, we call game clean which destroys the SDL objects
+
+//-----------------------------------------------------------------------
+//game.h
+//-----------------------------------------------------------------------
+forward state the existance of a ColliderComponent class
+
+private variables:
+isRunning, window
+
+public variables:
+FUNCTIONS=: init function, handleEvents, updatae, running, render, clean, addTitle
+VARS=: renderer ptr, event obj, colliders ptr
+
+//-----------------------------------------------------------------------
+//game.cpp
+//-----------------------------------------------------------------------
+includes all the headers created
+creates a map ptr
+creates a manager object
+creates a renderer pointer 
+
+
+
+//-----------------------------------------------------------------------
+//init
+//-----------------------------------------------------------------------

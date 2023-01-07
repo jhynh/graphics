@@ -1,5 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/project_1.dir/main.cpp.o"
+  "CMakeFiles/project_1.dir/src/Collision.cpp.o"
+  "CMakeFiles/project_1.dir/src/ECS.cpp.o"
   "CMakeFiles/project_1.dir/src/Game.cpp.o"
   "CMakeFiles/project_1.dir/src/Map.cpp.o"
   "CMakeFiles/project_1.dir/src/Texture_manager.cpp.o"

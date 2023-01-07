@@ -1,4 +1,4 @@
-# Install script for directory: /home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2
+# Install script for directory: /home/jan/Documents/graphicsDev/project_01/include/SDL2_image-2.6.2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -55,8 +55,8 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibraryx" OR NOT CMAKE_INSTALL_COMP
     endif()
   endforeach()
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES
-    "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/libSDL2_image-2.0d.so.0.600.2"
-    "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/libSDL2_image-2.0d.so.0"
+    "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/libSDL2_image-2.0d.so.0.600.2"
+    "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/libSDL2_image-2.0d.so.0"
     )
   foreach(file
       "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libSDL2_image-2.0d.so.0.600.2"
@@ -78,7 +78,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibraryx" OR NOT CMAKE_INSTALL_COMP
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libSDL2_image-2.0d.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/libSDL2_image-2.0d.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/libSDL2_image-2.0d.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libSDL2_image-2.0d.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libSDL2_image-2.0d.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -88,15 +88,15 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibraryx" OR NOT CMAKE_INSTALL_COMP
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/SDL2" TYPE FILE FILES "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/SDL_image.h")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/SDL2" TYPE FILE FILES "/home/jan/Documents/graphicsDev/project_01/include/SDL2_image-2.6.2/SDL_image.h")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image" TYPE FILE FILES
-    "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/SDL2_imageConfig.cmake"
-    "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/SDL2_imageConfigVersion.cmake"
-    "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/cmake/Findlibjxl.cmake"
-    "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/cmake/Findwebp.cmake"
+    "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/SDL2_imageConfig.cmake"
+    "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/SDL2_imageConfigVersion.cmake"
+    "/home/jan/Documents/graphicsDev/project_01/include/SDL2_image-2.6.2/cmake/Findlibjxl.cmake"
+    "/home/jan/Documents/graphicsDev/project_01/include/SDL2_image-2.6.2/cmake/Findwebp.cmake"
     )
 endif()
 
@@ -104,7 +104,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPON
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image/SDL2_image-shared-targets.cmake")
     file(DIFFERENT EXPORT_FILE_CHANGED FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image/SDL2_image-shared-targets.cmake"
-         "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/Export/lib/cmake/SDL2_image/SDL2_image-shared-targets.cmake")
+         "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/Export/lib/cmake/SDL2_image/SDL2_image-shared-targets.cmake")
     if(EXPORT_FILE_CHANGED)
       file(GLOB OLD_CONFIG_FILES "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image/SDL2_image-shared-targets-*.cmake")
       if(OLD_CONFIG_FILES)
@@ -113,9 +113,9 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPON
       endif()
     endif()
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image" TYPE FILE FILES "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/Export/lib/cmake/SDL2_image/SDL2_image-shared-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image" TYPE FILE FILES "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/Export/lib/cmake/SDL2_image/SDL2_image-shared-targets.cmake")
   if("${CMAKE_INSTALL_CONFIG_NAME}" MATCHES "^([Dd][Ee][Bb][Uu][Gg])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image" TYPE FILE FILES "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/Export/lib/cmake/SDL2_image/SDL2_image-shared-targets-debug.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/SDL2_image" TYPE FILE FILES "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/CMakeFiles/Export/lib/cmake/SDL2_image/SDL2_image-shared-targets-debug.cmake")
   endif()
 endif()
 
@@ -123,18 +123,18 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPON
   
             # FIXME: use file(COPY_FILE) if minimum CMake version >= 3.21
             execute_process(COMMAND "${CMAKE_COMMAND}" -E copy_if_different
-                "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/SDL2_image-Debug.pc"
-                "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/SDL2_image.pc")
+                "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/SDL2_image-Debug.pc"
+                "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/SDL2_image.pc")
             file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig"
                 TYPE FILE
-                FILES "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/SDL2_image.pc")
+                FILES "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/SDL2_image.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xdevelx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/home/jan/Documents/sdl/project_01/build/include/SDL2_image-2.6.2/libSDL2_imaged.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE FILE FILES "/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2/libSDL2_imaged.so")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xlibraryx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/licenses/SDL2_image" TYPE FILE FILES "/home/jan/Documents/sdl/project_01/include/SDL2_image-2.6.2/LICENSE.txt")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/licenses/SDL2_image" TYPE FILE FILES "/home/jan/Documents/graphicsDev/project_01/include/SDL2_image-2.6.2/LICENSE.txt")
 endif()
 

@@ -62,10 +62,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jan/Documents/sdl/project_01
+CMAKE_SOURCE_DIR = /home/jan/Documents/graphicsDev/project_01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jan/Documents/sdl/project_01/build
+CMAKE_BINARY_DIR = /home/jan/Documents/graphicsDev/project_01/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/project_1.dir/depend.make
@@ -78,98 +78,126 @@ include CMakeFiles/project_1.dir/flags.make
 
 CMakeFiles/project_1.dir/main.cpp.o: CMakeFiles/project_1.dir/flags.make
 CMakeFiles/project_1.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_1.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/main.cpp.o -c /home/jan/Documents/sdl/project_01/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/project_1.dir/main.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/main.cpp.o -c /home/jan/Documents/graphicsDev/project_01/main.cpp
 
 CMakeFiles/project_1.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/sdl/project_01/main.cpp > CMakeFiles/project_1.dir/main.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/main.cpp > CMakeFiles/project_1.dir/main.cpp.i
 
 CMakeFiles/project_1.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/sdl/project_01/main.cpp -o CMakeFiles/project_1.dir/main.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/main.cpp -o CMakeFiles/project_1.dir/main.cpp.s
+
+CMakeFiles/project_1.dir/src/Collision.cpp.o: CMakeFiles/project_1.dir/flags.make
+CMakeFiles/project_1.dir/src/Collision.cpp.o: ../src/Collision.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_1.dir/src/Collision.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Collision.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/Collision.cpp
+
+CMakeFiles/project_1.dir/src/Collision.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/Collision.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/Collision.cpp > CMakeFiles/project_1.dir/src/Collision.cpp.i
+
+CMakeFiles/project_1.dir/src/Collision.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/Collision.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/Collision.cpp -o CMakeFiles/project_1.dir/src/Collision.cpp.s
+
+CMakeFiles/project_1.dir/src/ECS.cpp.o: CMakeFiles/project_1.dir/flags.make
+CMakeFiles/project_1.dir/src/ECS.cpp.o: ../src/ECS.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_1.dir/src/ECS.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/ECS.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/ECS.cpp
+
+CMakeFiles/project_1.dir/src/ECS.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/ECS.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/ECS.cpp > CMakeFiles/project_1.dir/src/ECS.cpp.i
+
+CMakeFiles/project_1.dir/src/ECS.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/ECS.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/ECS.cpp -o CMakeFiles/project_1.dir/src/ECS.cpp.s
 
 CMakeFiles/project_1.dir/src/Game.cpp.o: CMakeFiles/project_1.dir/flags.make
 CMakeFiles/project_1.dir/src/Game.cpp.o: ../src/Game.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/project_1.dir/src/Game.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Game.cpp.o -c /home/jan/Documents/sdl/project_01/src/Game.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_1.dir/src/Game.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Game.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/Game.cpp
 
 CMakeFiles/project_1.dir/src/Game.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/Game.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/sdl/project_01/src/Game.cpp > CMakeFiles/project_1.dir/src/Game.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/Game.cpp > CMakeFiles/project_1.dir/src/Game.cpp.i
 
 CMakeFiles/project_1.dir/src/Game.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/Game.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/sdl/project_01/src/Game.cpp -o CMakeFiles/project_1.dir/src/Game.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/Game.cpp -o CMakeFiles/project_1.dir/src/Game.cpp.s
 
 CMakeFiles/project_1.dir/src/Map.cpp.o: CMakeFiles/project_1.dir/flags.make
 CMakeFiles/project_1.dir/src/Map.cpp.o: ../src/Map.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/project_1.dir/src/Map.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Map.cpp.o -c /home/jan/Documents/sdl/project_01/src/Map.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_1.dir/src/Map.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Map.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/Map.cpp
 
 CMakeFiles/project_1.dir/src/Map.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/Map.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/sdl/project_01/src/Map.cpp > CMakeFiles/project_1.dir/src/Map.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/Map.cpp > CMakeFiles/project_1.dir/src/Map.cpp.i
 
 CMakeFiles/project_1.dir/src/Map.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/Map.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/sdl/project_01/src/Map.cpp -o CMakeFiles/project_1.dir/src/Map.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/Map.cpp -o CMakeFiles/project_1.dir/src/Map.cpp.s
 
 CMakeFiles/project_1.dir/src/Texture_manager.cpp.o: CMakeFiles/project_1.dir/flags.make
 CMakeFiles/project_1.dir/src/Texture_manager.cpp.o: ../src/Texture_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/project_1.dir/src/Texture_manager.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Texture_manager.cpp.o -c /home/jan/Documents/sdl/project_01/src/Texture_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_1.dir/src/Texture_manager.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Texture_manager.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/Texture_manager.cpp
 
 CMakeFiles/project_1.dir/src/Texture_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/Texture_manager.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/sdl/project_01/src/Texture_manager.cpp > CMakeFiles/project_1.dir/src/Texture_manager.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/Texture_manager.cpp > CMakeFiles/project_1.dir/src/Texture_manager.cpp.i
 
 CMakeFiles/project_1.dir/src/Texture_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/Texture_manager.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/sdl/project_01/src/Texture_manager.cpp -o CMakeFiles/project_1.dir/src/Texture_manager.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/Texture_manager.cpp -o CMakeFiles/project_1.dir/src/Texture_manager.cpp.s
 
 CMakeFiles/project_1.dir/src/Vector2D.cpp.o: CMakeFiles/project_1.dir/flags.make
 CMakeFiles/project_1.dir/src/Vector2D.cpp.o: ../src/Vector2D.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/project_1.dir/src/Vector2D.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Vector2D.cpp.o -c /home/jan/Documents/sdl/project_01/src/Vector2D.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_1.dir/src/Vector2D.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/Vector2D.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/Vector2D.cpp
 
 CMakeFiles/project_1.dir/src/Vector2D.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/Vector2D.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/sdl/project_01/src/Vector2D.cpp > CMakeFiles/project_1.dir/src/Vector2D.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/Vector2D.cpp > CMakeFiles/project_1.dir/src/Vector2D.cpp.i
 
 CMakeFiles/project_1.dir/src/Vector2D.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/Vector2D.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/sdl/project_01/src/Vector2D.cpp -o CMakeFiles/project_1.dir/src/Vector2D.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/Vector2D.cpp -o CMakeFiles/project_1.dir/src/Vector2D.cpp.s
 
 CMakeFiles/project_1.dir/src/gameObject.cpp.o: CMakeFiles/project_1.dir/flags.make
 CMakeFiles/project_1.dir/src/gameObject.cpp.o: ../src/gameObject.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/project_1.dir/src/gameObject.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/gameObject.cpp.o -c /home/jan/Documents/sdl/project_01/src/gameObject.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/project_1.dir/src/gameObject.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/gameObject.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/gameObject.cpp
 
 CMakeFiles/project_1.dir/src/gameObject.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/gameObject.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/sdl/project_01/src/gameObject.cpp > CMakeFiles/project_1.dir/src/gameObject.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/gameObject.cpp > CMakeFiles/project_1.dir/src/gameObject.cpp.i
 
 CMakeFiles/project_1.dir/src/gameObject.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/gameObject.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/sdl/project_01/src/gameObject.cpp -o CMakeFiles/project_1.dir/src/gameObject.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/gameObject.cpp -o CMakeFiles/project_1.dir/src/gameObject.cpp.s
 
 CMakeFiles/project_1.dir/src/interface.cpp.o: CMakeFiles/project_1.dir/flags.make
 CMakeFiles/project_1.dir/src/interface.cpp.o: ../src/interface.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/project_1.dir/src/interface.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/interface.cpp.o -c /home/jan/Documents/sdl/project_01/src/interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/project_1.dir/src/interface.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/project_1.dir/src/interface.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/interface.cpp
 
 CMakeFiles/project_1.dir/src/interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/project_1.dir/src/interface.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/sdl/project_01/src/interface.cpp > CMakeFiles/project_1.dir/src/interface.cpp.i
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/jan/Documents/graphicsDev/project_01/src/interface.cpp > CMakeFiles/project_1.dir/src/interface.cpp.i
 
 CMakeFiles/project_1.dir/src/interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/project_1.dir/src/interface.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/sdl/project_01/src/interface.cpp -o CMakeFiles/project_1.dir/src/interface.cpp.s
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/jan/Documents/graphicsDev/project_01/src/interface.cpp -o CMakeFiles/project_1.dir/src/interface.cpp.s
 
 # Object files for target project_1
 project_1_OBJECTS = \
 "CMakeFiles/project_1.dir/main.cpp.o" \
+"CMakeFiles/project_1.dir/src/Collision.cpp.o" \
+"CMakeFiles/project_1.dir/src/ECS.cpp.o" \
 "CMakeFiles/project_1.dir/src/Game.cpp.o" \
 "CMakeFiles/project_1.dir/src/Map.cpp.o" \
 "CMakeFiles/project_1.dir/src/Texture_manager.cpp.o" \
@@ -181,6 +209,8 @@ project_1_OBJECTS = \
 project_1_EXTERNAL_OBJECTS =
 
 project_1: CMakeFiles/project_1.dir/main.cpp.o
+project_1: CMakeFiles/project_1.dir/src/Collision.cpp.o
+project_1: CMakeFiles/project_1.dir/src/ECS.cpp.o
 project_1: CMakeFiles/project_1.dir/src/Game.cpp.o
 project_1: CMakeFiles/project_1.dir/src/Map.cpp.o
 project_1: CMakeFiles/project_1.dir/src/Texture_manager.cpp.o
@@ -190,7 +220,7 @@ project_1: CMakeFiles/project_1.dir/src/interface.cpp.o
 project_1: CMakeFiles/project_1.dir/build.make
 project_1: /usr/lib/x86_64-linux-gnu/libSDL2_image.so
 project_1: CMakeFiles/project_1.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jan/Documents/sdl/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable project_1"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/jan/Documents/graphicsDev/project_01/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable project_1"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/project_1.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -203,6 +233,6 @@ CMakeFiles/project_1.dir/clean:
 .PHONY : CMakeFiles/project_1.dir/clean
 
 CMakeFiles/project_1.dir/depend:
-	cd /home/jan/Documents/sdl/project_01/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jan/Documents/sdl/project_01 /home/jan/Documents/sdl/project_01 /home/jan/Documents/sdl/project_01/build /home/jan/Documents/sdl/project_01/build /home/jan/Documents/sdl/project_01/build/CMakeFiles/project_1.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/jan/Documents/graphicsDev/project_01/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/jan/Documents/graphicsDev/project_01 /home/jan/Documents/graphicsDev/project_01 /home/jan/Documents/graphicsDev/project_01/build /home/jan/Documents/graphicsDev/project_01/build /home/jan/Documents/graphicsDev/project_01/build/CMakeFiles/project_1.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/project_1.dir/depend
 

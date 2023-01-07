@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/home/jan/Documents/opengl/salsaDip/Application.cpp
+/home/jan/Documents/graphicsDev/opengl/gameEngine/Application.cpp
 GLFW/glfw3.h
 -
 

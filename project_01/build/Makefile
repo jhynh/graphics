@@ -67,10 +67,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/jan/Documents/sdl/project_01
+CMAKE_SOURCE_DIR = /home/jan/Documents/graphicsDev/project_01
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/jan/Documents/sdl/project_01/build
+CMAKE_BINARY_DIR = /home/jan/Documents/graphicsDev/project_01/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -145,9 +145,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jan/Documents/sdl/project_01/build/CMakeFiles /home/jan/Documents/sdl/project_01/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jan/Documents/graphicsDev/project_01/build/CMakeFiles /home/jan/Documents/graphicsDev/project_01/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/jan/Documents/sdl/project_01/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jan/Documents/graphicsDev/project_01/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -253,6 +253,60 @@ main.s: main.cpp.s
 main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/main.cpp.s
 .PHONY : main.cpp.s
+
+src/Collision.o: src/Collision.cpp.o
+
+.PHONY : src/Collision.o
+
+# target to build an object file
+src/Collision.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/Collision.cpp.o
+.PHONY : src/Collision.cpp.o
+
+src/Collision.i: src/Collision.cpp.i
+
+.PHONY : src/Collision.i
+
+# target to preprocess a source file
+src/Collision.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/Collision.cpp.i
+.PHONY : src/Collision.cpp.i
+
+src/Collision.s: src/Collision.cpp.s
+
+.PHONY : src/Collision.s
+
+# target to generate assembly for a file
+src/Collision.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/Collision.cpp.s
+.PHONY : src/Collision.cpp.s
+
+src/ECS.o: src/ECS.cpp.o
+
+.PHONY : src/ECS.o
+
+# target to build an object file
+src/ECS.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/ECS.cpp.o
+.PHONY : src/ECS.cpp.o
+
+src/ECS.i: src/ECS.cpp.i
+
+.PHONY : src/ECS.i
+
+# target to preprocess a source file
+src/ECS.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/ECS.cpp.i
+.PHONY : src/ECS.cpp.i
+
+src/ECS.s: src/ECS.cpp.s
+
+.PHONY : src/ECS.s
+
+# target to generate assembly for a file
+src/ECS.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/ECS.cpp.s
+.PHONY : src/ECS.cpp.s
 
 src/Game.o: src/Game.cpp.o
 
@@ -435,6 +489,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Collision.o"
+	@echo "... src/Collision.i"
+	@echo "... src/Collision.s"
+	@echo "... src/ECS.o"
+	@echo "... src/ECS.i"
+	@echo "... src/ECS.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
