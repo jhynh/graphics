@@ -2,16 +2,18 @@
 #include "components.hpp"
 #include "../Vector2D.hpp"
 //each component type we create can make use of the Component functions
-struct TransformComponent : public Component{
-
+class TransformComponent : public Component{
+public:
     Vector2D position;
     Vector2D velocity;
 
     int height = 32;
     int width = 32;
+    //scale bruh
     int scale = 1;
 
     int speed = 3;
+    bool blocked;
 
     
     TransformComponent()
@@ -45,10 +47,8 @@ struct TransformComponent : public Component{
     }
 
     void update() override{
-        position.x += velocity.x * speed;
-        position.y += velocity.y * speed;
-
+        position.x += static_cast<int>(velocity.x * speed);
+        position.y += static_cast<int>(velocity.y * speed);   
     }
-
 
 };

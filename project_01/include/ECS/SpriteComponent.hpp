@@ -6,6 +6,7 @@
 #include "../Texture_manager.hpp"
 #include "Animation.hpp"
 #include <map>
+#include "../AssetManager.hpp"
 
 class SpriteComponent : public Component
 {
@@ -28,15 +29,15 @@ public:
 
     SDL_RendererFlip spriteFlip = SDL_FLIP_NONE;
 
-    std::map<const char*, Animation> animations;
+    std::map<std::string, Animation> animations;
 
     SpriteComponent() = default;
-    SpriteComponent(const char* path){
+    SpriteComponent(std::string id){
         //creates sprite
-        setTex(path);
+        setTex(id);
     }
     
-    SpriteComponent(const char* path, bool isAnimated){
+    SpriteComponent(std::string id, bool isAnimated){
         //creates sprite
         animated = isAnimated;
 
@@ -50,15 +51,13 @@ public:
         
         Play("Idle");
 
-        setTex(path);
+        setTex(id);
     }
     
-    ~SpriteComponent(){
-        SDL_DestroyTexture(texture);
-    }
+    ~SpriteComponent(){}
 
-    void setTex(const char* path){
-        texture = Texture_manager::LoadTexture(path);
+    void setTex(std::string id){
+        texture = Game::assets->getTexture(id);
     }
 
     void init() override{
@@ -73,16 +72,16 @@ public:
     void update() override{
 
         //we shift the x position on the png
-        if(this->animated){
-            srcRect.x = srcRect.w * static_cast<int>((SDL_GetTicks()/speed) % frames);
+        if(animated){
+            srcRect.x = srcRect.w * static_cast<int>((SDL_GetTicks() / speed) % frames);
         }
         //32 -> 64, y position
         // 1*32 2*32 3*32
         srcRect.y = animIndex * transform->height;
 
         //rectangle expects an int
-        destRect.x = static_cast<int>(transform->position.x);
-        destRect.y = static_cast<int>(transform->position.y);
+        destRect.x = static_cast<int>(transform->position.x - Game::camera.x);
+        destRect.y = static_cast<int>(transform->position.y - Game::camera.y);
         
         destRect.w = transform->width * transform->scale;
         destRect.h = transform->height * transform->scale;
@@ -95,9 +94,9 @@ public:
 
     void Play(const char* animName)
     {
-        frames = animations[animName].frames;
-        animIndex = animations[animName].index;
-        speed = animations[animName].speed;
+		frames = animations[animName].frames;
+		animIndex = animations[animName].index;
+		speed = animations[animName].speed;
     }
 
 };

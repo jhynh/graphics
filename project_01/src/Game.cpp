@@ -4,6 +4,7 @@
 #include "components.hpp"
 #include "Vector2D.hpp"
 #include "Collision.hpp"
+#include "AssetManager.hpp"
 
 Map* map;                                                                   //creating a ptr of obj map
 Manager manager;                                                            //creating a manager object
@@ -12,23 +13,14 @@ Manager manager;                                                            //cr
 SDL_Renderer* Game::renderer = nullptr;
 SDL_Event Game::event;
 
-std::vector<ColliderComponent*> Game::colliders;
+//width, height
+SDL_Rect Game::camera = {0,0,800,640};
+
+AssetManager* Game::assets = new AssetManager(&manager);
+
+bool Game::isRunning = false;
 
 auto& player(manager.addEntity());
-auto& wall(manager.addEntity());
-
-//clearly define groups
-enum groupLabels : std::size_t{
-    groupMap,
-    groupPlayers,
-    groupEnemies,
-    groupColliders,
-};
-
-//implementing tile system
-/* auto& tile0(manager.addEntity());
-auto& tile1(manager.addEntity());
-auto& tile2(manager.addEntity()); */
 
 Game::Game(){}
 
@@ -57,33 +49,36 @@ void Game::init(const char* title, int width, int height, bool fullscreen){
     }else
         isRunning = false;
 
+    assets->AddTexture("terrain", "../assets/terrain_ss.png");
+    assets->AddTexture("player", "../assets/player_anims.png");
+    assets->AddTexture("projectile", "../assets/fireball.png");
+
 //spawn stuff
 //-------------------------------------------------------------------------------------------------------
     //we need to init a surface, can remove after using search socrative texture
-    map = new Map();
+    map = new Map("terrain", 3, 32);
 
-    Map::LoadMap("../assets/p16x16.map", 16, 16);
+    map->LoadMap("../assets/map.map", 25, 20);
 
-//implmeneting tile system
-/*     tile0.addComponent<TileComponent>(200, 200, 32, 32, 0);
-    tile1.addComponent<TileComponent>(250, 250, 32, 32, 1);
-    tile1.addComponent<ColliderComponent>("dirt");
-    tile2.addComponent<TileComponent>(150, 150, 32, 32, 2);
-    tile2.addComponent<ColliderComponent>("grass"); */
-
-    player.addComponent<TransformComponent>(2);
-    player.addComponent<SpriteComponent>("../assets/player_anims.png", true);
+    player.addComponent<TransformComponent>(800.0f, 640.0f, 32 , 32, 4);
+    player.addComponent<SpriteComponent>("player", true);
     player.addComponent<KeyboardController>();
-    player.addComponent<ColliderComponent>("player");
+    player.addComponent<ColliderComponent>("player");                           //possibly due to the ordering of the components being added, causing the collider component to appear in the player texture
     player.addGroup(groupPlayers);
+    
+    assets->CreateProjectile(Vector2D(600,600),Vector2D(2,0), 200, 2, "projectile");
+    assets->CreateProjectile(Vector2D(600,620),Vector2D(2,1), 200, 2, "projectile");
+    assets->CreateProjectile(Vector2D(400,600),Vector2D(2,-1), 200, 2, "projectile");
+    assets->CreateProjectile(Vector2D(600,660),Vector2D(2,0), 200, 2, "projectile");
 
-    //make wall bigger than a single title
-    wall.addComponent<TransformComponent>(300.0f, 300.0f, 300, 20, 1);
-    wall.addComponent<SpriteComponent>("../assets/dirt.png");
-    wall.addComponent<ColliderComponent>("wall");
-    wall.addGroup(groupMap);
 //-------------------------------------------------------------------------------------------------------
 }
+//bro, stop making vectors of type double
+auto& tiles(manager.getGroup(Game::groupMap));
+auto& players(manager.getGroup(Game::groupPlayers));
+auto& colliders(manager.getGroup(Game::groupColliders));        //MISTAKES BRUH, YOU PUT IT IN THE WRONG GROUP
+auto& projectiles(manager.getGroup(Game::groupProjectiles));
+
 //https://medium.com/@savas/nomad-game-engine-part-7-the-event-system-45a809ccb68f
 void Game::handleEvents(){
     SDL_PollEvent(&event);
@@ -100,19 +95,58 @@ void Game::handleEvents(){
 }
 
 void Game::update(){
-    //map->LoadMap();       //for loading a config map
+
+    SDL_Rect playerCol = player.getComponent<ColliderComponent>().collider;
+    Vector2D playerPos = player.getComponent<TransformComponent>().position;
+
     manager.refresh();
     manager.update();
 
-    for(auto cc : colliders)
-    {
-        Collision::AABB(player.getComponent<ColliderComponent>(), *cc);
+    //check if player is colliding with it
+    for(auto& c : colliders){
+        SDL_Rect cCol = c->getComponent<ColliderComponent>().collider;
+        if(Collision::AABB(cCol, playerCol)){
+            player.getComponent<TransformComponent>().position = playerPos;
+        }
     }
-}
 
-auto& tiles(manager.getGroup(groupMap));
-auto& players(manager.getGroup(groupPlayers));
-auto& enemies(manager.getGroup(groupEnemies));
+    for(auto& p : projectiles)
+    {
+        if(Collision::AABB(player.getComponent<ColliderComponent>().collider, p->getComponent<ColliderComponent>().collider))
+        {
+            std::cout << "Hit the player\n";
+            p->destroy();
+        }
+    }
+
+//*************************************************************************->for side scrolling
+/*     Vector2D pVel = player.getComponent<TransformComponent>().velocity;
+    int pSpeed = player.getComponent<TransformComponent>().speed;
+
+    for(auto t : tiles)
+    {
+        //when we go right, we scroll the tiles left
+        t->getComponent<TileComponent>().destRect.x +=  -(pVel.x * pSpeed);
+        t->getComponent<TileComponent>().destRect.y += -(pVel.y * pSpeed);
+    } */
+
+    //take away half of the screen to leave player in middle
+    //800
+    camera.x = static_cast<int>(player.getComponent<TransformComponent>().position.x - 400);
+    //640
+    camera.y = static_cast<int>(player.getComponent<TransformComponent>().position.y - 320);
+
+    //check bounds
+    if(camera.x < 0)
+        camera.x = 0;
+    if(camera.y < 0)
+        camera.y = 0;
+    if(camera.x > camera.w)
+        camera.x = camera.w;
+    if(camera.y > camera.h)
+        camera.y = camera.h;
+
+}
 
 void Game::render(){
     //this is where we add stuff to render
@@ -128,11 +162,17 @@ void Game::render(){
     for(auto& t : tiles){
         t->draw();
     }
+
+    for(auto& c : colliders){
+        c->draw();
+    }
+
     for(auto& p : players){
         p->draw();
     }
-    for(auto& e : enemies){
-        e->draw();
+
+    for(auto& p : projectiles){
+        p->draw();
     }
 
     SDL_RenderPresent(renderer);
@@ -143,10 +183,4 @@ void Game::clean(){
     SDL_DestroyRenderer(renderer);
     SDL_Quit();
     std::cout << "Game Cleaned" << std::endl;
-}
-
-void Game::AddTile(int id, int x, int y){
-    auto& tile(manager.addEntity());
-    tile.addComponent<TileComponent>(x, y, 32, 32, id);
-    tile.addGroup(groupMap);
 }

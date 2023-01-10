@@ -1,53 +1,43 @@
 #pragma once
 #include "ECS.hpp"
-#include "TransformComponent.hpp"
 #include <SDL2/SDL.h>
 #include "SpriteComponent.hpp"
 
 class TileComponent : public Component{
 public:
-    TransformComponent* transform;
-    SpriteComponent* sprite;
 
-    SDL_Rect tileRect;
-    int tileID;                                         //used for auto assigning a texture for us
+    SDL_Texture* texture;
+    SDL_Rect srcRect, destRect;
     
-    const char* path;
+    Vector2D position;
 
     TileComponent() = default;
-
-    TileComponent(int x, int y, int w, int h, int id)
+    
+    ~TileComponent(){
+        SDL_DestroyTexture(texture);
+    }
+    
+    TileComponent(int srcX, int srcY, int xpos, int ypos, int tsize, int tscale, std::string id)
     {
-        tileRect.x = x;
-        tileRect.y = y;
-        tileRect.w = w;
-        tileRect.h = h;
-        tileID = id;
-        
-        switch (tileID)
-        {
-        case 0:
-            path = "../assets/water.png"; 
-            break;
-        case 1:
-            path = "../assets/dirt.png";
-            break;
-        case 2:
-            path = "../assets/grass.png";
-            break;
-        
-        default:
-            break;
-        }
+        texture = Game::assets->getTexture(id);
+
+        srcRect.x = srcX;
+        srcRect.y = srcY;
+        srcRect.w = srcRect.h = tsize;
+        position.x = static_cast<float>(xpos);
+        position.y = static_cast<float>(ypos);
+        destRect.w = destRect.h = tsize * tscale;
 
     }
 
-    void init() override{
-        entity->addComponent<TransformComponent>((float)tileRect.x, (float)tileRect.y, tileRect.w, tileRect.h, 1);
-        transform = &entity->getComponent<TransformComponent>();
+    void update() override{
+        destRect.x = static_cast<int>(position.x - Game::camera.x);
+        destRect.y = static_cast<int>(position.y - Game::camera.y);
+    }
 
-        entity->addComponent<SpriteComponent>(path);
-        sprite = &entity->getComponent<SpriteComponent>();
+    void draw() override
+    {
+        Texture_manager::Draw(texture, srcRect, destRect, SDL_FLIP_NONE);
     }
 
 };

@@ -6,6 +6,18 @@
 
 #IncludeRegexTransform: 
 
+../include/AssetManager.hpp
+ECS.hpp
+../include/ECS.hpp
+map
+-
+string
+-
+Texture_manager.hpp
+../include/Texture_manager.hpp
+Vector2D.hpp
+../include/Vector2D.hpp
+
 ../include/Collision.hpp
 SDL2/SDL.h
 -
@@ -13,12 +25,14 @@ SDL2/SDL.h
 ../include/ECS/Animation.hpp
 
 ../include/ECS/ColliderComp.hpp
-components.hpp
-../include/ECS/components.hpp
 string
 -
 SDL2/SDL.h
 -
+components.hpp
+../include/ECS/components.hpp
+../Texture_manager.hpp
+../include/Texture_manager.hpp
 
 ../include/ECS/ECS.hpp
 iostream
@@ -42,6 +56,14 @@ components.hpp
 ECS.hpp
 ../include/ECS/ECS.hpp
 
+../include/ECS/ProjectileComponent.hpp
+ECS.hpp
+../include/ECS/ECS.hpp
+components.hpp
+../include/ECS/components.hpp
+../Vector2D.hpp
+../include/Vector2D.hpp
+
 ../include/ECS/SpriteComponent.hpp
 components.hpp
 ../include/ECS/components.hpp
@@ -53,12 +75,12 @@ Animation.hpp
 ../include/ECS/Animation.hpp
 map
 -
+../AssetManager.hpp
+../include/AssetManager.hpp
 
 ../include/ECS/TileComponent.hpp
 ECS.hpp
 ../include/ECS/ECS.hpp
-TransformComponent.hpp
-../include/ECS/TransformComponent.hpp
 SDL2/SDL.h
 -
 SpriteComponent.hpp
@@ -83,6 +105,8 @@ ColliderComp.hpp
 ../include/ECS/ColliderComp.hpp
 TileComponent.hpp
 ../include/ECS/TileComponent.hpp
+ProjectileComponent.hpp
+../include/ECS/ProjectileComponent.hpp
 
 ../include/Game.hpp
 SDL2/SDL.h
@@ -120,6 +144,12 @@ Game.hpp
 iostream
 -
 
+/home/jan/Documents/graphicsDev/project_01/src/AssetManager.cpp
+AssetManager.hpp
+/home/jan/Documents/graphicsDev/project_01/src/AssetManager.hpp
+components.hpp
+/home/jan/Documents/graphicsDev/project_01/src/components.hpp
+
 /home/jan/Documents/graphicsDev/project_01/src/Collision.cpp
 Collision.hpp
 /home/jan/Documents/graphicsDev/project_01/src/Collision.hpp
@@ -139,4 +169,18 @@ Vector2D.hpp
 /home/jan/Documents/graphicsDev/project_01/src/Vector2D.hpp
 Collision.hpp
 /home/jan/Documents/graphicsDev/project_01/src/Collision.hpp
+AssetManager.hpp
+/home/jan/Documents/graphicsDev/project_01/src/AssetManager.hpp
+
+/home/jan/Documents/graphicsDev/project_01/src/Map.cpp
+Map.hpp
+/home/jan/Documents/graphicsDev/project_01/src/Map.hpp
+Game.hpp
+/home/jan/Documents/graphicsDev/project_01/src/Game.hpp
+ECS.hpp
+/home/jan/Documents/graphicsDev/project_01/src/ECS.hpp
+components.hpp
+/home/jan/Documents/graphicsDev/project_01/src/components.hpp
+fstream
+-
 

@@ -6,6 +6,11 @@
 },
 {
   "directory": "/home/jan/Documents/graphicsDev/project_01/build",
+  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/graphicsDev/project_01/include -I/home/jan/Documents/graphicsDev/project_01/include/ECS -I/home/jan/Documents/graphicsDev/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/AssetManager.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/AssetManager.cpp",
+  "file": "/home/jan/Documents/graphicsDev/project_01/src/AssetManager.cpp"
+},
+{
+  "directory": "/home/jan/Documents/graphicsDev/project_01/build",
   "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/graphicsDev/project_01/include -I/home/jan/Documents/graphicsDev/project_01/include/ECS -I/home/jan/Documents/graphicsDev/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/Collision.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/Collision.cpp",
   "file": "/home/jan/Documents/graphicsDev/project_01/src/Collision.cpp"
 },
@@ -33,11 +38,6 @@
   "directory": "/home/jan/Documents/graphicsDev/project_01/build",
   "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/graphicsDev/project_01/include -I/home/jan/Documents/graphicsDev/project_01/include/ECS -I/home/jan/Documents/graphicsDev/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/Vector2D.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/Vector2D.cpp",
   "file": "/home/jan/Documents/graphicsDev/project_01/src/Vector2D.cpp"
-},
-{
-  "directory": "/home/jan/Documents/graphicsDev/project_01/build",
-  "command": "/usr/bin/g++  -I/usr/include/SDL2 -I/home/jan/Documents/graphicsDev/project_01/include -I/home/jan/Documents/graphicsDev/project_01/include/ECS -I/home/jan/Documents/graphicsDev/project_01/include/gui -g -fPIE -std=gnu++17 -o CMakeFiles/project_1.dir/src/gameObject.cpp.o -c /home/jan/Documents/graphicsDev/project_01/src/gameObject.cpp",
-  "file": "/home/jan/Documents/graphicsDev/project_01/src/gameObject.cpp"
 },
 {
   "directory": "/home/jan/Documents/graphicsDev/project_01/build",

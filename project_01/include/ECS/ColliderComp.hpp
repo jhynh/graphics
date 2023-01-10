@@ -1,16 +1,27 @@
 #pragma once
-#include "components.hpp"
 #include <string>
 #include <SDL2/SDL.h>
+#include "components.hpp"
+#include "../Texture_manager.hpp"
 
 class ColliderComponent : public Component{
-    public:
+public:
     SDL_Rect collider;
     std::string tag;
+    SDL_Texture* tex;
+    SDL_Rect srcR, destR;
 
     TransformComponent* transform;
 
     ColliderComponent(std::string t){ tag = t; }
+
+    ColliderComponent(std::string t, int xpos, int ypos, int size)
+    {
+        tag = t;
+        collider.x = xpos;
+        collider.y = ypos;
+        collider.h = collider.w = size;
+    }
 
     void init() override{
         if(!entity->hasComponent<TransformComponent>()){
@@ -18,16 +29,29 @@ class ColliderComponent : public Component{
         }
         transform = &entity->getComponent<TransformComponent>();
 
-        Game::colliders.push_back(this);
+        tex = Texture_manager::LoadTexture("../assets/collision.png");
+        srcR = {0,0,32,32};
+        destR = {collider.x, collider.y, collider.w, collider.h};
+
     }
 
     //transform is a float, sdl rect requires an int
     void update() override{
-        //places it on the origin of transforms
-        collider.x = static_cast<int>(transform->position.x);
-        collider.y = static_cast<int>(transform->position.y);
-        collider.w = transform->width * transform->scale;
-        collider.h = transform->height * transform->scale;
+        if(tag != "terrain")
+        {
+            //places it on the origin of transforms
+            collider.x = static_cast<int>(transform->position.x);
+            collider.y = static_cast<int>(transform->position.y);
+            collider.w = transform->width * transform->scale;
+            collider.h = transform->height * transform->scale;
+        }
+
+        destR.x = collider.x - Game::camera.x;
+        destR.y = collider.y - Game::camera.y;
+    }
+
+    void draw() override{
+        Texture_manager::Draw(tex, srcR, destR, SDL_FLIP_NONE);
     }
 
 };

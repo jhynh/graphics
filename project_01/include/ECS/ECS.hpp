@@ -108,7 +108,7 @@ public:
 
         //when we add position componenet, it is always placed in same position in array
         componentArray[getComponentTypeID<T>()] = c;
-        componentBitSet[getComponentTypeID<T>()] = true;
+        componentBitSet[getComponentTypeID<T>()] = true;            //done so by having a second "array"
 
         c->init();
         return *c;

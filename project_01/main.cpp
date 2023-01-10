@@ -17,7 +17,7 @@ int main(int argc, char* argv[]){
 
     game = new Game();
 
-    game->init("zriels_project", 800, 640, false);
+    game->init("riels_project", 800, 640, false);
 
     while(game->running()){
         

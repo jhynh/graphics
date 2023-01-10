@@ -254,6 +254,33 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/AssetManager.o: src/AssetManager.cpp.o
+
+.PHONY : src/AssetManager.o
+
+# target to build an object file
+src/AssetManager.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/AssetManager.cpp.o
+.PHONY : src/AssetManager.cpp.o
+
+src/AssetManager.i: src/AssetManager.cpp.i
+
+.PHONY : src/AssetManager.i
+
+# target to preprocess a source file
+src/AssetManager.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/AssetManager.cpp.i
+.PHONY : src/AssetManager.cpp.i
+
+src/AssetManager.s: src/AssetManager.cpp.s
+
+.PHONY : src/AssetManager.s
+
+# target to generate assembly for a file
+src/AssetManager.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/AssetManager.cpp.s
+.PHONY : src/AssetManager.cpp.s
+
 src/Collision.o: src/Collision.cpp.o
 
 .PHONY : src/Collision.o
@@ -416,33 +443,6 @@ src/Vector2D.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/Vector2D.cpp.s
 .PHONY : src/Vector2D.cpp.s
 
-src/gameObject.o: src/gameObject.cpp.o
-
-.PHONY : src/gameObject.o
-
-# target to build an object file
-src/gameObject.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/gameObject.cpp.o
-.PHONY : src/gameObject.cpp.o
-
-src/gameObject.i: src/gameObject.cpp.i
-
-.PHONY : src/gameObject.i
-
-# target to preprocess a source file
-src/gameObject.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/gameObject.cpp.i
-.PHONY : src/gameObject.cpp.i
-
-src/gameObject.s: src/gameObject.cpp.s
-
-.PHONY : src/gameObject.s
-
-# target to generate assembly for a file
-src/gameObject.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/project_1.dir/build.make CMakeFiles/project_1.dir/src/gameObject.cpp.s
-.PHONY : src/gameObject.cpp.s
-
 src/interface.o: src/interface.cpp.o
 
 .PHONY : src/interface.o
@@ -489,6 +489,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/AssetManager.o"
+	@echo "... src/AssetManager.i"
+	@echo "... src/AssetManager.s"
 	@echo "... src/Collision.o"
 	@echo "... src/Collision.i"
 	@echo "... src/Collision.s"
@@ -507,9 +510,6 @@ help:
 	@echo "... src/Vector2D.o"
 	@echo "... src/Vector2D.i"
 	@echo "... src/Vector2D.s"
-	@echo "... src/gameObject.o"
-	@echo "... src/gameObject.i"
-	@echo "... src/gameObject.s"
 	@echo "... src/interface.o"
 	@echo "... src/interface.i"
 	@echo "... src/interface.s"
