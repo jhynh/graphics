@@ -1,1 +1,0 @@
-/usr/bin/clang++-9 -g CMakeFiles/opengl_d1.dir/Application.cpp.o -o opengl_d1  /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 /usr/lib/x86_64-linux-gnu/libGL.so /usr/lib/x86_64-linux-gnu/libGLU.so 

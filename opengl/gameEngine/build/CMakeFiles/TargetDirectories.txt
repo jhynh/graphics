@@ -1,3 +1,0 @@
-/home/jan/Documents/graphicsDev/opengl/gameEngine/build/CMakeFiles/rebuild_cache.dir
-/home/jan/Documents/graphicsDev/opengl/gameEngine/build/CMakeFiles/edit_cache.dir
-/home/jan/Documents/graphicsDev/opengl/gameEngine/build/CMakeFiles/opengl_d1.dir

@@ -1,7 +1,0 @@
-[
-{
-  "directory": "/home/jan/Documents/graphicsDev/opengl/gameEngine/build",
-  "command": "/usr/bin/clang++-9  -I/home/jan/Documents/graphicsDev/opengl/gameEngine/include -g -std=gnu++17 -o CMakeFiles/opengl_d1.dir/Application.cpp.o -c /home/jan/Documents/graphicsDev/opengl/gameEngine/Application.cpp",
-  "file": "/home/jan/Documents/graphicsDev/opengl/gameEngine/Application.cpp"
-}
-]
