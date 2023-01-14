@@ -1,1 +1,0 @@
-/usr/bin/cc -g CMakeFiles/showanim.dir/showanim.c.o -o showanim  -Wl,-rpath,/home/jan/Documents/graphicsDev/project_01/build/include/SDL2_image-2.6.2 libSDL2_image-2.0d.so.0.600.2 /usr/lib/x86_64-linux-gnu/libSDL2main.a /usr/lib/x86_64-linux-gnu/libSDL2.so 

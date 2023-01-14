@@ -1,1 +1,0 @@
-/usr/bin/gcc -g CMakeFiles/showimage.dir/showimage.c.o -o showimage  -Wl,-rpath,/home/jan/Documents/sdl/project_01/build/SDL2_image-2.6.2 libSDL2_image-2.0d.so.0.600.2 /usr/lib/x86_64-linux-gnu/libSDL2main.a /usr/lib/x86_64-linux-gnu/libSDL2.so 
